@@ -72,6 +72,7 @@ Once these values were selected, the model was ran on the validation data to eva
 | v8 | 0.02 | 0.10 | 0.02 | Full scan | >= 2 | Lowered RAPID_DESCENT, restored voting >= 2 | 0.7374 | 0.6695 | 0.8207 | 0.7495 |
 | v9 | 0.05 | 0.12 | 0.02 | Full scan | >= 2 | Raised Rules 1 & 2 thresholds for differentiation | 0.7505 | 0.6757 | 0.8439 | 0.7595 |
 | v10 | 0.10 | 0.12 | 0.02 | Full scan | >= 2 | Raised HIP_DESCENT further | 0.7514 | 0.6915 | 0.8228 | 0.7667 |
+
 (Versions' individual code was not saved separately, the main code file was edited for each iteration and is available [here](rule-based.ipynb))
 
 Key notes:
@@ -104,6 +105,7 @@ The table below shows the changes made in each iteration along with the results:
 | v2 | 0.01 | 0.10 | 1.00 | 5 | 2 | 10 | Lowered HIP_VELOCITY, raised FRAME_VOTE | 0.6761 | 0.6998 | 0.6540 | 0.7315 |
 | v3 | 0.005 | 0.10 | 1.00 | 5 | 2 | 5 | Lowered HIP_VELOCITY further, restored FRAME_VOTE | 0.7154 | 0.6649 | 0.7743 | 0.7360 |
 | v4 | 0.005 | 0.10 | 1.25 | 5 | 2 | 5 | Raised RATIO_THRESHOLD | 0.7184 | 0.6798 | 0.7616 | 0.7441 |
+
 (Versions' individual code was not saved separately, the main code file was edited for each iteration and is available [here](alt-rule-based/alt-rule-based.ipynb))
 
 The best result achieved was an F1 of `0.7184`, which did not surpass the original baseline's best at the time of `0.7407`, so the original baseline's structure and logic was declared to be overall better, and it was returned to and further optimised, particularly with the addition of scanning over the sequence for Rule 3 as mentioned above. The per-frame approach is included here to show that this alternative design was considered and evaluated.
@@ -136,6 +138,7 @@ The table below shows the changes made in each iteration along with the results:
 | v8 | 0.4 | 5e-4 | 1.3 | 5e-4 | 75 | 15 | 32 | 50 | 0.8580 | 0.8553 | 0.8608 | 0.8779 |
 | v9 | 0.4 | 5e-4 | 1.3 | 0.001 | 75 | 15 | 64 | 54 | 0.8650 | 0.8715 | 0.8586 | 0.8852 |
 | v10 | 0.4 | 5e-4 | 1.3 | 0.001 | 75 | 15 | 32 | 38 | 0.8598 | 0.8407 | 0.8797 | 0.8770 |
+
 (Versions' individual code was not saved separately, the main code file was edited for each iteration and is available [here](LSTM-train.ipynb). However, best model checkpoints, training history, validation results, and analysis graphs were all saved for each iteration, and are all available [here](models).)
 
 Key notes:
