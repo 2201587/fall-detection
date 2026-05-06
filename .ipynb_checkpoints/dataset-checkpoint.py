@@ -19,9 +19,7 @@ class FallDetectionDataset(Dataset):
         
         # Verify resolution info exists
         if self.clips and 'width' not in self.clips[0]:
-            raise ValueError(
-                "Resolution information not found in metadata."
-            )
+            raise ValueError("Resolution information not found in metadata.")
         
         print(f"\nLoaded {split} set:")
         print(f"  Total clips: {len(self.clips)}")
