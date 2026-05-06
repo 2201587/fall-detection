@@ -1,6 +1,6 @@
 # Fall Detection
 
-This is my fall detection project, comparing performance between a temporal deep learning model (LSTM) and a rule-based model, both tuned and evaluated on the FallVision dataset (Rahman et al., 2025). 
+This is my fall detection project, comparing performance between a temporal deep learning model (LSTM) and a rule-based model, both tuned and evaluated on the [FallVision](https://dataverse.harvard.edu/dataset.xhtml?persistentId=doi:10.7910/DVN/75QPKK) dataset (Rahman et al., 2025). 
 
 ## Overview
 
@@ -177,4 +177,4 @@ The LSTM outperformed the rule-based model across all metrics on the test set. T
 The rule call rates on the test set (Rule 1: 16.0%, Rule 2: 52.0%, Rule 3: 67.5%) were consistent with those observed on the validation set during development, which gives some confidence that the model was not overfitted to the validation data.
 
 ## References
-Rahman, N.N., Mahi, A.B.S., Mistry, D., Masud, S.M.R.A., Saha, A.K., Rahman, R. and Islam, Md.R. (2025) ‘FallVision: A benchmark video dataset for fall detection’, *Data in Brief*, 59, p. 111440. Available at: https://doi.org/10.1016/j.dib.2025.111440.
+Rahman, N.N., Mahi, A.B.S., Mistry, D., Masud, S.M.R.A., Saha, A.K., Rahman, R. and Islam, Md.R. (2025) ‘FallVision: A benchmark video dataset for fall detection’, *Data in Brief*, 59, p. 111440. Available at: [https://doi.org/10.1016/j.dib.2025.111440](https://doi.org/10.1016/j.dib.2025.111440).
